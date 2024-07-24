@@ -698,7 +698,23 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
   display: none;
 }
 
+.portfolio-section img {
+  object-fit: cover;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .contact-item:first-child > a {
+    color: #404bbf;
+  }
+
+  .contact-item {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+  }
+
   .mobile-menu {
     position: fixed;
     inset: 0;
@@ -963,6 +979,11 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
     width: 92vw;
     height: 97vh;
   }
+
+  .portfolio-item img {
+    width: 288px;
+    height: 280px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -1064,6 +1085,11 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
         ),
         url("../images/people-office-tabl@2x.jpg");
     }
+  }
+
+  .portfolio-item img {
+    width: 356px;
+    height: 300px;
   }
 }
 
