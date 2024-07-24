@@ -92,6 +92,16 @@ p {
   margin: auto;
 }
 
+@media (min-resolution: 192dpi) {
+  .hero-section.section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office@2x.jpg");
+  }
+}
+
 .heading-two {
   font-size: 36px;
   line-height: 1.11;
@@ -216,7 +226,14 @@ p {
 }
 
 .icons-div {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
 }
 
 .section-item {
@@ -844,6 +861,7 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
     align-items: center;
     max-width: 264px;
   }
+
   .heading-three {
     font-weight: 500;
     font-size: 20px;
@@ -928,6 +946,16 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
     padding: 72px 52px 200px 52px;
   }
 
+  @media (min-resolution: 192dpi) {
+    .hero-section.section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/people-office-mobile@2x.jpg");
+    }
+  }
+
   .portfolio-item {
     max-width: 288px;
   }
@@ -993,11 +1021,6 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
     margin: auto 0 auto auto;
   }
 
-  .goals-section .heading-three {
-    font-weight: 700;
-    font-size: 36px;
-  }
-
   .modal {
     top: 35%;
   }
@@ -1032,17 +1055,24 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
     position: relative;
     padding: 112px 136px 204px 136px;
   }
+
+  @media (min-resolution: 192dpi) {
+    .hero-section.section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/people-office-tabl@2x.jpg");
+    }
+  }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (max-width: 1157px) {
+  .goals-section .heading-three {
+    font-weight: 700;
+    font-size: 36px;
+  }
   .icons-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    border: 1px solid #8e8f99;
-    margin-bottom: 8px;
+    display: none;
   }
 }
