@@ -21,6 +21,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 li {
@@ -145,7 +147,6 @@ p {
   line-height: 1.5;
   border-radius: 4px;
   padding: 16px 32px;
-  min-width: 169px;
   margin: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -822,12 +823,9 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
     text-align: center;
   }
 
-  .hero-section .container.section-item {
-    padding: 0 52px;
-  }
-
   .hero-section > .section-item > .heading-one {
     margin-bottom: 72px;
+    width: 216px;
   }
 
   .goals-list.container-item {
@@ -847,7 +845,7 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
   }
 
   .section {
-    padding: 96px 16px;
+    padding: 96px 0;
   }
 
   .goals-section .container-item,
@@ -955,7 +953,7 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
       ),
       url("../images/people-office-mobile.jpg");
     position: relative;
-    padding: 72px 52px 200px 52px;
+    padding: 72px 0;
   }
 
   @media (min-resolution: 192dpi) {
@@ -973,12 +971,6 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
   }
   .modal {
     width: 92vw;
-    height: 97vh;
-  }
-
-  .portfolio-item img {
-    width: 288px;
-    height: 280px;
   }
 }
 
@@ -1070,7 +1062,7 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
       ),
       url("../images/people-office-tabl.jpg");
     position: relative;
-    padding: 112px 136px 204px 136px;
+    padding: 112px 0;
   }
 
   @media (min-resolution: 192dpi) {
@@ -1086,6 +1078,14 @@ input[type="checkbox"]:checked + .modal-form-desc > .modal-form-checkbox {
   .portfolio-item img {
     width: 356px;
     height: 300px;
+  }
+
+  .section {
+    padding: 96px 0;
+  }
+
+  .team-section .container {
+    max-width: 584px;
   }
 }
 
